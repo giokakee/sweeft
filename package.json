@@ -1,0 +1,38 @@
+{
+	"name": "sweeft",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"dev": "nodemon index.js",
+		"migrations:dev": "node ./migrate.js",
+		"migrations:dev:up": "npm run migrations:dev -- up",
+		"migrations:dev:down": "npm run migrations:dev -- down"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"@sendgrid/mail": "^8.1.1",
+		"bcrypt": "^5.1.1",
+		"body-parser": "^1.20.2",
+		"dotenv": "^16.4.5",
+		"express": "^4.18.3",
+		"express-validator": "^7.0.1",
+		"jsonwebtoken": "^9.0.2",
+		"multer": "^1.4.5-lts.1",
+		"mysql2": "^3.9.2",
+		"nodemailer": "^6.9.11",
+		"passport": "^0.7.0",
+		"passport-jwt": "^4.0.1",
+		"pino": "^8.19.0",
+		"sequelize": "^6.37.1",
+		"umzug": "^3.7.0",
+		"uuid": "^9.0.1"
+	},
+	"devDependencies": {
+		"nodemon": "^3.1.0",
+		"pino-pretty": "^10.3.1"
+	}
+}

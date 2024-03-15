@@ -1,0 +1,19 @@
+# @format
+
+version: '3.1'
+
+services:
+   mysql:
+      image: mysql
+      ports:
+         - '3306:3306'
+      environment:
+         MYSQL_DATABASE: 'sweeft_project'
+         MYSQL_USER: 'dev'
+         MYSQL_PASSWORD: 'dev'
+         MYSQL_ROOT_PASSWORD: 'root'
+
+   redis:
+      image: redis
+      ports:
+         - '6379:6379'
